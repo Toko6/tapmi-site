@@ -95,7 +95,7 @@ module.exports = {
       h1: 'Polityka prywatności (RODO)',
       back: '← Wróć na stronę główną',
       sections: [
-        ['Administrator danych', 'Administratorem danych osobowych jest {COMPANY}{ADDRESS_LINE}. Kontakt: {EMAIL}, tel. {PHONE}.'],
+        ['Administrator danych', 'Administratorem danych osobowych jest {COMPANY}{ADDRESS_LINE}. Kontakt: {CONTACT}.'],
         ['Jakie dane i po co', 'Z formularza „Umów bezpłatne demo” zbieramy imię i nazwisko, nazwę lokalu, miasto, numer telefonu oraz — jeśli je podasz — e-mail i wiadomość. Używamy ich wyłącznie, by skontaktować się w sprawie demo i przedstawić ofertę.'],
         ['Podstawa prawna', 'Art. 6 ust. 1 lit. b RODO — działania podejmowane na Twoje żądanie przed zawarciem umowy; art. 6 ust. 1 lit. f RODO — nasz uzasadniony interes, czyli kontakt w sprawie Twojego zapytania i ewentualna obrona przed roszczeniami.'],
         ['Jak długo', 'Przechowujemy dane do 12 miesięcy od ostatniego kontaktu, chyba że zawrzemy umowę — wtedy na czas jej trwania i przez okres wymagany przepisami.'],
@@ -199,7 +199,7 @@ module.exports = {
       h1: 'Privacy policy (GDPR)',
       back: '← Back to the home page',
       sections: [
-        ['Controller', 'The controller of your personal data is {COMPANY}{ADDRESS_LINE}. Contact: {EMAIL}, phone {PHONE}.'],
+        ['Controller', 'The controller of your personal data is {COMPANY}{ADDRESS_LINE}. Contact: {CONTACT}.'],
         ['What data and why', 'Through the “Book a free demo” form we collect your name, venue name, city, phone number and — if you give them — your email and message. We use them only to contact you about the demo and our offer.'],
         ['Legal basis', 'Art. 6(1)(b) GDPR — steps taken at your request before entering into a contract; Art. 6(1)(f) GDPR — our legitimate interest in replying to your enquiry and defending possible claims.'],
         ['How long', 'We keep the data for up to 12 months after our last contact, unless we sign a contract — then for its duration and as long as the law requires.'],

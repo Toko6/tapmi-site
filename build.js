@@ -9,7 +9,9 @@ const CFG = require('./src/config');
 const OUT = path.join(__dirname, 'public');
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const ADDRESS_LINE = (CFG.ADDRESS ? ', ' + CFG.ADDRESS : '') + (CFG.NIP ? ', NIP ' + CFG.NIP : '');
-const fill = s => String(s).replace(/\{(PHONE|EMAIL|COMPANY|ADDRESS_LINE)\}/g, (_, k) => (k === 'ADDRESS_LINE' ? ADDRESS_LINE : CFG[k]));
+// Contact line for the privacy page: email (when set) and phone.
+const CONTACT = [CFG.EMAIL, CFG.PHONE].filter(Boolean).join(', ');
+const fill = s => String(s).replace(/\{(PHONE|EMAIL|COMPANY|ADDRESS_LINE|CONTACT)\}/g, (_, k) => (k === 'ADDRESS_LINE' ? ADDRESS_LINE : k === 'CONTACT' ? CONTACT : CFG[k]));
 // The privacy sentence under the form links its last words to the policy page.
 const privacyNote = t => esc(fill(t.form.privacy)).replace(/(polityka prywatności \(RODO\)|privacy policy \(GDPR\))/, `<a href="${t.privacyPath}">$1</a>`);
 
@@ -258,7 +260,7 @@ function page(t) {
         <ul>
           <li><a href="tel:${esc(CFG.PHONE.replace(/[^\d+]/g, ''))}">${esc(t.cta.call)}: ${esc(CFG.PHONE)}</a></li>
           ${CFG.WHATSAPP ? `<li><a href="https://wa.me/${esc(CFG.WHATSAPP)}" rel="noopener">WhatsApp</a></li>` : ''}
-          <li><a href="mailto:${esc(CFG.EMAIL)}">${esc(CFG.EMAIL)}</a></li>
+          ${CFG.EMAIL ? `<li><a href="mailto:${esc(CFG.EMAIL)}">${esc(CFG.EMAIL)}</a></li>` : ''}
         </ul>
       </div>
     </div>
@@ -284,7 +286,7 @@ function page(t) {
   <div class="wrap foot-grid">
     <div><a class="logo" href="${home}"><img src="/favicon.svg" alt="" width="24" height="24"><b>Tap<span>Mi</span></b></a><p>${esc(t.footer.tagline)}</p></div>
     <div><h4>${esc(t.footer.product)}</h4><a href="#how">${esc(t.nav.how)}</a><a href="#features">${esc(t.nav.features)}</a><a href="#faq">${esc(t.nav.faq)}</a><a href="${CFG.APP_URL}/login">${esc(t.nav.login)}</a></div>
-    <div><h4>${esc(t.footer.company)}</h4><a href="tel:${esc(CFG.PHONE.replace(/[^\d+]/g, ''))}">${esc(CFG.PHONE)}</a><a href="mailto:${esc(CFG.EMAIL)}">${esc(CFG.EMAIL)}</a><a href="${t.privacyPath}">${esc(t.footer.privacy)}</a></div>
+    <div><h4>${esc(t.footer.company)}</h4><a href="tel:${esc(CFG.PHONE.replace(/[^\d+]/g, ''))}">${esc(CFG.PHONE)}</a>${CFG.EMAIL ? `<a href="mailto:${esc(CFG.EMAIL)}">${esc(CFG.EMAIL)}</a>` : ''}<a href="${t.privacyPath}">${esc(t.footer.privacy)}</a></div>
     <div><h4>${t.lang === 'pl' ? 'Język' : 'Language'}</h4><a href="/" hreflang="pl" lang="pl">Polski</a><a href="/en/" hreflang="en" lang="en">English</a></div>
   </div>
   <div class="wrap foot-legal">© ${new Date().getFullYear()} ${esc(CFG.COMPANY)}${esc(ADDRESS_LINE)}</div>

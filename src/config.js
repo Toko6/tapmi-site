@@ -3,7 +3,7 @@
 module.exports = {
   PHONE: '+48 731 262 699',
   WHATSAPP: '48731262699',    // digits only, for wa.me links
-  EMAIL: '{EMAIL}',            // e.g. 'kontakt@tapmi.pl'
+  EMAIL: '',                   // e.g. 'kontakt@tapmi.pl' — empty = email hidden everywhere
   COMPANY: 'Jelly Soft',       // data controller for the demo form (RODO)
   ADDRESS: '',                 // e.g. 'ul. Przykładowa 1, 00-001 Warszawa'
   NIP: '',
