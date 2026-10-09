@@ -115,6 +115,7 @@ p { margin: 0; }
 .hero { padding: 36px 0 56px; position: relative; }
 .hero-grid { display: grid; gap: 24px; position: relative; }
 .hero-ctas { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+.hero-note { margin: 12px 0 0; font-size: 0.88rem; color: rgba(255, 255, 255, 0.72); }
 .chips { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; color: var(--on-dark); }
 .chips .ic { color: var(--amber-hi); }

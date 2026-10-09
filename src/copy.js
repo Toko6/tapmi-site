@@ -13,6 +13,7 @@ module.exports = {
       title: 'Więcej opinii Google. O słabej wizycie wiesz od razu.',
       lead: 'Karta NFC na stole. Gość ocenia w 5 sekund.',
       cta: 'Umów bezpłatne demo', secondary: 'Zobacz, jak to działa',
+      note: 'Pierwsze 30 dni za darmo · bez karty płatniczej',
       chips: [['phone', 'Bez aplikacji'], ['shield', 'Zgodne z Google'], ['check', 'Telefon i PC']],
     },
     mock: {
@@ -73,7 +74,7 @@ module.exports = {
     },
     cta: {
       eyebrow: 'Bezpłatne demo', title: 'Zobacz TapMi na własnym telefonie',
-      body: 'Bez zobowiązań. Pokażemy wszystko na przykładzie lokalu podobnego do Twojego.',
+      body: 'Bez zobowiązań. Pierwsze 30 dni w jednym lokalu są bezpłatne.',
       call: 'Zadzwoń', whatsapp: 'WhatsApp', or: 'albo zostaw kontakt:',
     },
     form: {
@@ -115,6 +116,7 @@ module.exports = {
       title: 'More Google reviews. Hear about a bad visit at once.',
       lead: 'An NFC card on the table. Guests rate in 5 seconds.',
       cta: 'Book a free demo', secondary: 'See how it works',
+      note: 'First 30 days free · no card needed',
       chips: [['phone', 'No app'], ['shield', 'Google-safe'], ['check', 'Phone & PC']],
     },
     mock: {
@@ -175,7 +177,7 @@ module.exports = {
     },
     cta: {
       eyebrow: 'Free demo', title: 'See TapMi on your own phone',
-      body: 'No obligation. We’ll show you everything using a venue like yours.',
+      body: 'No obligation. Your first 30 days at one venue are free.',
       call: 'Call', whatsapp: 'WhatsApp', or: 'or leave your details:',
     },
     form: {

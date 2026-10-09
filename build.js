@@ -152,6 +152,7 @@ function page(t) {
         <a class="btn btn-light magnet" href="#demo">${esc(t.hero.cta)} <span class="arrow">${icon('arrow', 18)}</span></a>
         <a class="btn btn-ghost hide-sm" href="#how">${esc(t.hero.secondary)}</a>
       </div>
+      <p class="hero-note load" style="--d:3">${esc(t.hero.note)}</p>
       <ul class="chips load" style="--d:4">${t.hero.chips.map(([ic, label]) => `<li>${icon(ic, 15)} ${esc(label)}</li>`).join('')}</ul>
     </div>
     <div class="hero-visual" id="story">
