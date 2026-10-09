@@ -11,13 +11,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tapmi.pl/"/>
   </url>
   <url><loc>https://tapmi.pl/polityka-prywatnosci/</loc><lastmod>2026-10-09</lastmod>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://tapmi.pl/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tapmi.pl/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapmi.pl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapmi.pl/polityka-prywatnosci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapmi.pl/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapmi.pl/polityka-prywatnosci/"/>
   </url>
   <url><loc>https://tapmi.pl/en/privacy/</loc><lastmod>2026-10-09</lastmod>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://tapmi.pl/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tapmi.pl/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapmi.pl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapmi.pl/polityka-prywatnosci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapmi.pl/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapmi.pl/polityka-prywatnosci/"/>
   </url>
 </urlset>

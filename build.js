@@ -326,11 +326,11 @@ fs.copyFileSync(path.join(__dirname, 'src', 'site.js'), path.join(OUT, 'site.js'
 const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${['/', '/en/', COPY.pl.privacyPath, COPY.en.privacyPath].map(p => `  <url><loc>${CFG.SITE_URL}${p}</loc><lastmod>${today}</lastmod>
-    <xhtml:link rel="alternate" hreflang="pl" href="${CFG.SITE_URL}/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${CFG.SITE_URL}/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${CFG.SITE_URL}/"/>
-  </url>`).join('\n')}
+${[['/', '/en/'], [COPY.pl.privacyPath, COPY.en.privacyPath]].flatMap(([pl, en]) => [pl, en].map(p => `  <url><loc>${CFG.SITE_URL}${p}</loc><lastmod>${today}</lastmod>
+    <xhtml:link rel="alternate" hreflang="pl" href="${CFG.SITE_URL}${pl}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${CFG.SITE_URL}${en}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${CFG.SITE_URL}${pl}"/>
+  </url>`)).join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${CFG.SITE_URL}/sitemap.xml\n`);
