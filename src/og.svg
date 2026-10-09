@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f19"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.32"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="90" r="420" fill="url(#glow)"/>
+  <!-- TapMi mark -->
+  <g transform="translate(80 78)">
+    <rect width="64" height="64" rx="14" fill="#111827" stroke="#374151" stroke-width="2"/>
+    <rect x="12" y="16" width="28" height="7" rx="2" fill="#fff"/>
+    <rect x="22.5" y="16" width="7" height="33" rx="2" fill="#fff"/>
+    <circle cx="47" cy="20.5" r="4.2" fill="#f59e0b"/>
+    <rect x="43.5" y="29" width="7" height="20" rx="2" fill="#f59e0b"/>
+  </g>
+  <text x="162" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="40" font-weight="800" fill="#fff">Tap<tspan fill="#f59e0b">Mi</tspan></text>
+  <text x="80" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="800" fill="#fff" letter-spacing="-2">Zadowoleni goście,</text>
+  <text x="80" y="388" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="800" fill="#fff" letter-spacing="-2">zgrany zespół.</text>
+  <text x="80" y="460" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" fill="#d1d5db">Oceny gości i opinie Google dla restauracji — karty NFC</text>
+  <!-- neutral stars, never a rating-dependent highlight -->
+  <g fill="#374151" transform="translate(80 510)">
+    <path d="M18 0l5.4 11 12.1 1.7-8.8 8.5 2.1 12L18 27.5 7.2 33.2l2.1-12L.5 12.7 12.6 11z"/>
+    <path transform="translate(44 0)" d="M18 0l5.4 11 12.1 1.7-8.8 8.5 2.1 12L18 27.5 7.2 33.2l2.1-12L.5 12.7 12.6 11z"/>
+    <path transform="translate(88 0)" d="M18 0l5.4 11 12.1 1.7-8.8 8.5 2.1 12L18 27.5 7.2 33.2l2.1-12L.5 12.7 12.6 11z"/>
+    <path transform="translate(132 0)" d="M18 0l5.4 11 12.1 1.7-8.8 8.5 2.1 12L18 27.5 7.2 33.2l2.1-12L.5 12.7 12.6 11z"/>
+    <path transform="translate(176 0)" d="M18 0l5.4 11 12.1 1.7-8.8 8.5 2.1 12L18 27.5 7.2 33.2l2.1-12L.5 12.7 12.6 11z"/>
+  </g>
+  <text x="1120" y="540" text-anchor="end" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#fbbf24">tapmi.pl</text>
+</svg>
