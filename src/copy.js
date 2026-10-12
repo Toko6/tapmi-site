@@ -4,17 +4,17 @@
 module.exports = {
   pl: {
     lang: 'pl', other: 'en', otherLabel: 'EN', otherHref: '/en/', langLabel: 'English version',
-    title: 'Opinie Google dla restauracji – karty NFC | TapMi',
-    description: 'Karta NFC na stoliku: goście oceniają wizytę w kilka sekund, a o niskiej ocenie wiesz od razu. Więcej zaproszeń do opinii Google, zgodnie z zasadami.',
+    title: 'Oceny gości i opinie Google – karty NFC dla restauracji | TapMi',
+    description: 'Karta NFC na stoliku: gość ocenia wizytę w kilka sekund, a o niskiej ocenie wiesz od razu. Oceny zespołu i zaproszenie do opinii Google dla każdego.',
     nav: { how: 'Jak to działa', owner: 'Alerty', features: 'Funkcje', groups: 'Dla grup lokali', faq: 'FAQ', login: 'Zaloguj się', cta: 'Umów demo', menu: 'Otwórz menu' },
     skip: 'Przejdź do treści',
     hero: {
-      eyebrow: 'Opinie Google i oceny gości · restauracje i kawiarnie',
-      title: 'Więcej opinii Google. O słabej wizycie wiesz od razu.',
+      eyebrow: 'Oceny gości · alerty · oceny zespołu',
+      title: 'Każdy gość ocenia. Ty reagujesz od razu.',
       lead: 'Karta NFC na stole. Gość ocenia w 5 sekund.',
       cta: 'Umów bezpłatne demo', secondary: 'Zobacz, jak to działa',
       note: 'Pierwsze 30 dni za darmo · bez karty płatniczej',
-      chips: [['phone', 'Bez aplikacji'], ['shield', 'Zgodne z Google'], ['check', 'Telefon i PC']],
+      chips: [['phone', 'Bez aplikacji'], ['shield', 'Zgodne z zasadami'], ['check', 'Telefon i PC']],
     },
     mock: {
       venue: 'Bistro Pod Lipą', question: 'Jak oceniasz swoją wizytę?', note: '+ Prywatna wiadomość dla zespołu', google: 'Oceń nas w Google',
@@ -26,7 +26,7 @@ module.exports = {
       eyebrow: 'Jak to działa', title: 'Trzy kroki, kilka sekund',
       steps: [
         ['Gość przykłada telefon', 'Do karty NFC — albo skanuje kod QR.'],
-        ['Ocenia gwiazdkami', 'Potem to samo zaproszenie do Google dla każdego.'],
+        ['Ocenia gwiazdkami', 'Potem to samo zaproszenie do opinii dla każdego.'],
         ['Ty wiesz od razu', 'Ocena 1–3★ przychodzi na Twój telefon.'],
       ],
     },
@@ -37,9 +37,9 @@ module.exports = {
       resolved: 'Załatwione', resolvedNote: 'Deser na koszt lokalu',
     },
     google: {
-      eyebrow: 'Zgodność z Google', title: 'To samo zaproszenie dla każdego',
+      eyebrow: 'Bez filtrowania opinii', title: 'To samo zaproszenie dla każdego',
       body: 'Każda ocena, od 1 do 5★, widzi ten sam przycisk Google. Prywatna wiadomość to dodatek — nigdy zamiast opinii.',
-      caption: 'Ten sam przycisk przy każdej ocenie',
+      caption: 'Ten sam przycisk przy każdej ocenie', rowLabel: 'Opinia',
     },
     features: {
       eyebrow: 'Funkcje', title: 'Wszystko, czego potrzebujesz', swipe: 'Przesuń, aby zobaczyć więcej',
@@ -107,17 +107,17 @@ module.exports = {
 
   en: {
     lang: 'en', other: 'pl', otherLabel: 'PL', otherHref: '/', langLabel: 'Wersja polska',
-    title: 'Google Reviews for Restaurants – NFC Cards | TapMi',
-    description: 'An NFC card on the table: guests rate their visit in seconds and you hear about low ratings at once. Every guest invited to review you on Google.',
+    title: 'Guest Ratings & Google Reviews – NFC Cards for Restaurants | TapMi',
+    description: 'An NFC card on the table: guests rate their visit in seconds and you hear about low ratings at once. Team ratings, plus a Google review invite for every guest.',
     nav: { how: 'How it works', owner: 'Alerts', features: 'Features', groups: 'For groups', faq: 'FAQ', login: 'Log in', cta: 'Book a demo', menu: 'Open menu' },
     skip: 'Skip to content',
     hero: {
-      eyebrow: 'Google reviews & guest ratings · restaurants and cafés',
-      title: 'More Google reviews. Hear about a bad visit at once.',
+      eyebrow: 'Guest ratings · instant alerts · team ratings',
+      title: 'Every guest rates. You react right away.',
       lead: 'An NFC card on the table. Guests rate in 5 seconds.',
       cta: 'Book a free demo', secondary: 'See how it works',
       note: 'First 30 days free · no card needed',
-      chips: [['phone', 'No app'], ['shield', 'Google-safe'], ['check', 'Phone & PC']],
+      chips: [['phone', 'No app'], ['shield', 'Fair by design'], ['check', 'Phone & PC']],
     },
     mock: {
       venue: 'Bistro Pod Lipą', question: 'How was your visit?', note: '+ Private note for the team', google: 'Review us on Google',
@@ -129,7 +129,7 @@ module.exports = {
       eyebrow: 'How it works', title: 'Three steps, a few seconds',
       steps: [
         ['The guest taps', 'Their phone on the NFC card — or scans the QR.'],
-        ['Rates with stars', 'Then the same Google invitation for everyone.'],
+        ['Rates with stars', 'Then the same review invitation for everyone.'],
         ['You know instantly', 'A 1–3★ rating pings your phone.'],
       ],
     },
@@ -140,9 +140,9 @@ module.exports = {
       resolved: 'Resolved', resolvedNote: 'Dessert on the house',
     },
     google: {
-      eyebrow: 'Google-safe', title: 'The same invitation for everyone',
+      eyebrow: 'Fair by design', title: 'The same invitation for everyone',
       body: 'Every rating, 1 to 5★, sees the same Google button. The private note is an extra — never a replacement.',
-      caption: 'The same button after every rating',
+      caption: 'The same button after every rating', rowLabel: 'Review',
     },
     features: {
       eyebrow: 'Features', title: 'Everything you need', swipe: 'Swipe to see more',

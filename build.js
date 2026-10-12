@@ -146,7 +146,7 @@ function page(t) {
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <p class="eyebrow load" style="--d:0">${esc(t.hero.eyebrow)}</p>
-      <h1 class="load" style="--d:1">${esc(t.hero.title)}</h1>
+      <h1 class="load hero-title" style="--d:1">${t.hero.title.split(/(?<=\.) /).map(s => `<span class="h1-line">${esc(s)}</span>`).join(' ')}</h1>
       <p class="lead load" style="--d:2">${esc(t.hero.lead)}</p>
       <div class="hero-ctas load" style="--d:3">
         <a class="btn btn-light magnet" href="#demo">${esc(t.hero.cta)} <span class="arrow">${icon('arrow', 18)}</span></a>
@@ -222,7 +222,7 @@ function page(t) {
     <p class="eyebrow">${esc(t.google.eyebrow)}</p><h2>${esc(t.google.title)}</h2>
     <p class="lead dark-ink">${esc(t.google.body)}</p>
     <div class="same para" aria-hidden="true">
-      ${[1, 2, 3, 4, 5].map(n => `<div class="same-row" style="--i:${n - 1}"><span class="same-stars">${'★'.repeat(n)}<i>${'★'.repeat(5 - n)}</i></span><span class="same-arrow">→</span><span class="same-btn"><span class="g-g">G</span> Google</span></div>`).join('')}
+      ${[1, 2, 3, 4, 5].map(n => `<div class="same-row" style="--i:${n - 1}"><span class="same-stars">${'★'.repeat(n)}<i>${'★'.repeat(5 - n)}</i></span><span class="same-arrow">→</span><span class="same-btn"><span class="g-g">G</span> ${esc(t.google.rowLabel)}</span></div>`).join('')}
       <p class="same-cap">${icon('check', 15)} ${esc(t.google.caption)}</p>
     </div>
   </div>

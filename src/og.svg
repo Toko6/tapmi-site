@@ -18,9 +18,9 @@
     <rect x="43.5" y="29" width="7" height="20" rx="2" fill="#f59e0b"/>
   </g>
   <text x="162" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="40" font-weight="800" fill="#fff">Tap<tspan fill="#f59e0b">Mi</tspan></text>
-  <text x="80" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="800" fill="#fff" letter-spacing="-2">Zadowoleni goście,</text>
-  <text x="80" y="388" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="800" fill="#fff" letter-spacing="-2">zgrany zespół.</text>
-  <text x="80" y="460" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" fill="#d1d5db">Oceny gości i opinie Google dla restauracji — karty NFC</text>
+  <text x="80" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="800" fill="#fff" letter-spacing="-2">Każdy gość ocenia.</text>
+  <text x="80" y="388" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="76" font-weight="800" fill="#fff" letter-spacing="-2">Ty reagujesz od razu.</text>
+  <text x="80" y="460" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" fill="#d1d5db">Oceny gości, alerty i oceny zespołu — karty NFC</text>
   <!-- neutral stars, never a rating-dependent highlight -->
   <g fill="#374151" transform="translate(80 510)">
     <path d="M18 0l5.4 11 12.1 1.7-8.8 8.5 2.1 12L18 27.5 7.2 33.2l2.1-12L.5 12.7 12.6 11z"/>
